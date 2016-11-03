@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天气查询</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    select{
+        width: 80px;
+        height:19px;
+    }
+    .showInfo{
+        width: 800px;
+        height: 488px;
+    }
+    .box{
+        background: #92b1cf;
+        width: 155px;
+        float: left;
+        position: relative;
+        border: 1px solid white;
+        text-align: center;
+        padding: 0px;
+        list-style: none;
+    }
+
+</style>
+<script src="jquery-3.0.0.min.js"></script>
+<script src="search.js"></script>
+<body>
+       <div  style="width:400px; height:30px; " >
+           <select  id="province" onchange="showCity()">
+               <option value="0">--请选择--</option>
+           </select>
+           <select  id="city" onchange="showArea()">
+               <option value="0">--请选择--</option>
+           </select>
+           <select  id="area" onchange="showWeather()">
+               <option value="0">--请选择--</option>
+           </select>
+       </div>
+
+        <div id="showInfo">
+            <!--<ul class="box">-->
+                <!--<li>2016-09-03</li>-->
+                <!--<li class="snowy" ></li>-->
+                <!--<li style="margin-top:170px;">多云</li>-->
+                <!--<li>20度</li>-->
+                <!--<li>无持续风向</li>-->
+                <!--<li>微风</li>-->
+                <!--<li>晚上</li>-->
+                <!--<li class="starry" style="margin-top:280px; "></li>-->
+                <!--<li style="margin-top:170px;">多云</li>-->
+                <!--<li>20度</li>-->
+                <!--<li>无持续风向</li>-->
+                <!--<li>微风</li>-->
+            <!--</ul>-->
+            <!--<ul class="box">-->
+                <!--<li>2016-09-03</li>-->
+                <!--<li class="stormy"  ></li>-->
+                <!--<li style="margin-top:170px;">多云</li>-->
+                <!--<li>20度</li>-->
+                <!--<li>无持续风向</li>-->
+                <!--<li>微风</li>-->
+                <!--<li>晚上</li>-->
+                <!--<li class="starry" style="margin-top:280px; "></li>-->
+                <!--<li style="margin-top:170px;">多云</li>-->
+                <!--<li>20度</li>-->
+                <!--<li>无持续风向</li>-->
+                <!--<li>微风</li>-->
+            <!--</ul>-->
+        </div>
+
+</body>
+</html>
